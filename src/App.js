@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <h1>React App</h1>
       <h2>Author: Jakob Fellner</h2>
-      
     </div>
   );
 }
