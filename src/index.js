@@ -3,19 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Chart } from 'regraph';
-
-const FamilyTree = () => (
-  <Chart items={{
-    luke: {label: {text: 'Luke Skywalker'}},
-    leia: {label: {text: 'Princess Leia'}},
-    link: {
-      id1: 'luke',
-      id2: 'leia',
-      label: {text: 'Siblings'},
-    }
-  }}/>
-);
 
 ReactDOM.render(
   <React.StrictMode>
