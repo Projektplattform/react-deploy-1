@@ -24,10 +24,10 @@ function App() {
 
       <InteractiveForceGraph
         zoom
-        simulationOptions={{ height: 800, width: 800, animate: true }}
+        simulationOptions={{ height: 500, width: 800, animate: true }}
         labelAttr="label"
         onSelectNode={(node: any) => console.log(node)}
-        highlightDependencies
+        highlightDependenciesnp
       >
         {Array.from({ length: 20 })
           .fill(0)
@@ -37,21 +37,21 @@ function App() {
               <ForceGraphNode
                 key={index}
                 node={{ id: index, label: index }}
-                fill="red"
+                fill="white"
               />
             );
           })}
         <ForceGraphNode
           node={{ id: "first-node", label: "First node" }}
-          fill="red"
+          fill="white"
         />
         <ForceGraphNode
           node={{ id: "third-node", label: "third node" }}
-          fill="red"
+          fill="white"
         />
         <ForceGraphNode
           node={{ id: "second-node", label: "Second node" }}
-          fill="blue"
+          fill="white"
         />
         <ForceGraphLink
           link={{ source: "first-node", target: "second-node" }}
