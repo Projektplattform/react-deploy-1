@@ -1,13 +1,22 @@
 .App {
   text-align: center;
-  text-decoration-color: white;
+  text-decoration-color: #000771;
+  font-weight: 900;
 }
 
 body {
-  background-color: #282c34;
-  color:white;
+  background-color: white; 
+  color:#000771;
+  font-weight:2000;
 }
 
+h1 {
+  color:#000771;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight:900;
+}
+  
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
 }
 
 .App-link {
@@ -42,3 +51,5 @@ body {
     transform: rotate(360deg);
   }
 }
+
+hr { background-color: white; height: 1px; border: none; }
