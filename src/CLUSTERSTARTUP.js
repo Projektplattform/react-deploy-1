@@ -1,12 +1,12 @@
-import { Color } from "react-color";
 
 const data = {
   nodes: [
     {
       id: "0",
+      link: "https://www.bauindustrie-bayern.de/",
       fillcolor: "#00016B", //rgb(0, 255, 0)
       isClusterNode: true,
-      name: "Cluster StartUp",
+      name: "StartUp's",
       rel_cluster_size: 22.0,
       cluster_size: 33
     },
@@ -14,7 +14,9 @@ const data = {
       id: "1",
       fillcolor: "#2C65BF",
       isClusterNode: true,
-      name: "Ingenieure & Projekt mgmt.",
+      isParagraph: true,
+      name: "Ingenieure &",
+      nameP: "Projekt mgmt.",
       rel_cluster_size: 11.0,
       cluster_size: 33
     },
@@ -253,7 +255,9 @@ const data = {
       id: "2",
       fillcolor: "#071B50",
       isClusterNode: true,
-      name: "Vergabe & Konstruktion",
+      isParagraph: true,
+      name: "Vergabe &",
+      nameP: "Konstruktion",
       rel_cluster_size: 8.666666666666666,
       cluster_size: 26
     },
@@ -717,7 +721,9 @@ const data = {
       id: "4",
       fillcolor: "#0218AC",
       isClusterNode: true,
-      name: "Bausysteme & -stoffe",
+      isParagraph: true,
+      name: "Bausysteme &",
+      nameP: "Baustoffe",
       rel_cluster_size: 15.333333333333334,
       cluster_size: 46
     },

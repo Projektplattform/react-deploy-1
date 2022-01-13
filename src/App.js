@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useEffect, useRef, useState, useMemo } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import ForceGraph2D from "react-force-graph-2d";
 import * as d3 from "d3";
 import {
@@ -55,7 +56,7 @@ function App() {
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
-      forceRef.current.zoom(4.5, 400);
+      forceRef.current.zoom(9, 400);
       forceRef.current.centerAt(node.x, node.y, 400);
     }
   };
@@ -85,10 +86,18 @@ function App() {
     setCollapsedClusters(projectMap[activeProject].clusterIds);
     forceRef.current.zoomToFit();
   };
+
+ 
+ 
+
   return (
     <div className="App">
+      
       <h1>BAUINDUSTRIE</h1>
+      
+      
       {Object.keys(projectMap).map((project) => (
+        
         <button
           key={project}
           onClick={() => {
@@ -97,11 +106,13 @@ function App() {
         >
           {project}
         </button>
+        
       ))}
       <hr />
       <button onClick={reset}>RESET</button>
       <hr />
-      
+      <button onClick={<a href="www.google.de"></a>}>Google</button>
+      <hr />
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {projectMap[activeProject].clusters.map((cluster) => (
            
@@ -123,13 +134,16 @@ function App() {
       <div style={{ backgroundColor: "rgb(237, 239, 240)" }}>
         <ForceGraph2D
           width={window.innerWidth}
-          height={window.innerHeight-200}
+          height={window.innerHeight-300}
+          minZoom={1}
+          maxZoom={40}
           ref={forceRef}
           onNodeClick={handleNodeClick}
           graphData={graphData}
           cooldownTicks={50}
           nodeRelSize={1}
           linkWidth={1}
+          font-weight={2000}
           onEngineStop={() => {
             if (initialCenter) {
               forceRef.current.zoomToFit();
@@ -141,20 +155,26 @@ function App() {
               
             {
             const label = node.name;
+            const labelP = node.nameP;
             node.color = node.fillcolor;
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
               : 14 / (globalScale * 1.2);
-            ctx.font = `${fontSize}px Sans-Serif`;
+            ctx.font = `${fontSize-0.5}px Sans-Serif`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = node.color ? "white" : "black"; //node.color;
-            if (node.isClusterNode) {
+            
+            if (node.isClusterNode && node.isParagraph) {
               ctx.fillText(label, node.x, node.y);
+              ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);     
+            } else if (node.isClusterNode) {
+              ctx.fillText(label, node.x, node.y);      
             } else if (globalScale >= 4.5) {
               ctx.fillText(label, node.x, node.y + 3.5);
             }
           }}
+
           enableNodeDrag={true} //from false to true
           nodeVisibility={(node) => {
             if (collapsedClusters.includes(node.clusterId)) {
