@@ -22,10 +22,13 @@ const data = {
     },
     {
       cluster_id: "1",
-      id: "people",
-      name: "people",
+      fillcolor: "#2C65BF",
+      id: "Alasco",
+      name: "Alasco",
+      location: "Deutschland",
+      link: "www.google.de",
       rank: 0.008143526326585776,
-      degrees: 103
+      degrees: 88
     },
     {
       cluster_id: "1",
@@ -1292,7 +1295,7 @@ const data = {
   
   ],
   links: [
-    { source: "1", target: "people" },
+    { source: "1", target: "Alasco" },
     { source: "1", target: "income" },
     { source: "1", target: "tax" },
     { source: "1", target: "help" },

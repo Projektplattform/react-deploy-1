@@ -53,22 +53,37 @@ function App() {
     }
   };
 
+/*
+  var handleNodeClick = function(node){
+    //console.log("forcegraph click on ",node)
+    if(node){
+        var newPageUrl = node.link
+        window.open(newPageUrl, "_blank") //to open new p
+    }
+  }
+  */
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
       forceRef.current.zoom(9, 400);
       forceRef.current.centerAt(node.x, node.y, 400);
+    } else if (!collapsedClusters.includes(node.cluster_id)) {
+      //var newPageUrl = "www.google.de"
+      window.open('www.google.de','_blank') //to open new p
     }
   };
 
-  const toggleCluster = (clusterId) => {
+  const toggleCluster = (node, clusterId) => {
     if (hiddenClusters.includes(clusterId)) {
       setHiddenClusters(hiddenClusters.filter((id) => id !== clusterId));
+  
     } else {
       setHiddenClusters([...hiddenClusters, clusterId]);
+      
     }
     if (!collapsedClusters.includes(clusterId)) {
       toggleClusterCollapse(clusterId);
+      
     }
   };
 
@@ -156,6 +171,7 @@ function App() {
             {
             const label = node.name;
             const labelP = node.nameP;
+            const locationlabel = <a href="www.google.de">Link</a>;
             node.color = node.fillcolor;
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
@@ -171,8 +187,9 @@ function App() {
             } else if (node.isClusterNode) {
               ctx.fillText(label, node.x, node.y);      
             } else if (globalScale >= 4.5) {
-              ctx.fillText(label, node.x, node.y + 3.5);
-            }
+              ctx.fillText(label, node.x, node.y + 0);
+              ctx.fillText(locationlabel, node.x, node.y + 1.0 * fontSize);
+            } 
           }}
 
           enableNodeDrag={true} //from false to true
