@@ -22,237 +22,203 @@ const data = {
     },
     {
       cluster_id: "1",
-      fillcolor: "#2C65BF",
       id: "Alasco",
       name: "Alasco",
-      location: "Deutschland",
-      link: "www.google.de",
-      rank: 0.008143526326585776,
-      degrees: 88
-    },
-    {
-      cluster_id: "1",
-      id: "income",
-      name: "income",
       rank: 0.006128326587162951,
-      degrees: 88
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://www.alasco.de/",
+      degrees: 1400
     },
     {
       cluster_id: "1",
-      id: "tax",
-      name: "tax",
+      id: "Sablono",
+      name: "Sablono",
+      rank: 0.006128326587162951,
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://www.sablono.com/",
+      degrees: 1600
+    },
+    {
+      cluster_id: "1",
+      id: "LandTech",
+      name: "LandTech",
       rank: 0.005676080905103744,
-      degrees: 111
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://land.tech/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "help",
-      name: "help",
+      id: "Digital Engineering Solutions",
+      name: "Digital Engineering Solutions",
       rank: 0.0034158013061813784,
-      degrees: 69
+      location: "Polen",
+      fillcolor: "#2C65BF",
+      link: "https://de-solutions.info/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "money",
-      name: "money",
+      id: "PlanRadar",
+      name: "PlanRadar",
       rank: 0.0032567280515781232,
-      degrees: 69
+      location: "Österreich",
+      fillcolor: "#2C65BF",
+      link: "https://www.planradar.com/de/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "month",
-      name: "month",
+      id: "Alice Technologies",
+      name: "Alice Technologies",
       rank: 0.003117809292823006,
-      degrees: 35
+      location: "USA",
+      fillcolor: "#2C65BF",
+      link: "https://www.alicetechnologies.com/home",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "pay",
-      name: "pay",
+      id: "swino",
+      name: "swino",
       rank: 0.002917780318579891,
-      degrees: 61
+      location: "Schweiz",
+      fillcolor: "#2C65BF",
+      link: "https://smino.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "homeless",
-      name: "homeless",
+      id: "GBuilder",
+      name: "GBuilder",
       rank: 0.0024551430646664175,
-      degrees: 30
+      location: "Finnland",
+      fillcolor: "#2C65BF",
+      link: "https://gbuilder.com/de/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "afford",
-      name: "afford",
+      id: "CAPMO",
+      name: "CAPMO",
       rank: 0.0024267579643031077,
-      degrees: 28
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://www.capmo.com/de/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "find",
-      name: "find",
+      id: "Scaled Robotics",
+      name: "Scaled Robotics",
       rank: 0.001792477960243676,
-      degrees: 23
+      location: "Spanien",
+      fillcolor: "#2C65BF",
+      link: "https://scaledrobotics.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "stay",
-      name: "stay",
+      id: "SWAPP",
+      name: "SWAPP",
       rank: 0.0014703448884418133,
-      degrees: 26
+      location: "Israel",
+      fillcolor: "#2C65BF",
+      link: "https://www.swapp.net/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "invest",
-      name: "invest",
+      id: "Novade",
+      name: "Novade",
       rank: 0.0014067462913841425,
-      degrees: 21
+      location: "Singapur",
+      fillcolor: "#2C65BF",
+      link: "https://www.novade.net/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "save",
-      name: "save",
+      id: "Nodes & Links",
+      name: "Nodes & Links",
       rank: 0.0013236119852794678,
-      degrees: 18
+      location: "England",
+      fillcolor: "#2C65BF",
+      link: "https://www.nodeslinks.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "person",
-      name: "person",
+      id: "Buildots",
+      name: "Buildots",
       rank: 0.0013120980729219797,
-      degrees: 22
+      location: "Isreal",
+      fillcolor: "#2C65BF",
+      link: "https://buildots.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "invancouver",
-      name: "invancouver",
+      id: "VU.CITY",
+      name: "VU.CITY",
       rank: 0.0012073983196932965,
-      degrees: 17
+      location: "England",
+      fillcolor: "#2C65BF",
+      link: "https://vu.city/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "lease",
-      name: "lease",
+      id: "testfit",
+      name: "testfit",
       rank: 0.0011364177330698132,
-      degrees: 21
+      location: "USA",
+      fillcolor: "#2C65BF",
+      link: "https://testfit.io/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "extra",
-      name: "extra",
+      id: "buildingradar",
+      name: "buildingradar",
       rank: 0.001118100513661404,
-      degrees: 14
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://buildingradar.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
       id: "process",
       name: "process",
       rank: 0.001102016048700778,
-      degrees: 10
+      location: "Deutschland",
+      fillcolor: "#2C65BF",
+      link: "https://buildingradar.com/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "charge",
-      name: "charge",
+      id: "Propster",
+      name: "Propster",
       rank: 0.0008781068487482841,
-      degrees: 10
+      location: "Österreich",
+      fillcolor: "#2C65BF",
+      link: "https://propster.tech/",
+      degrees: 1200
     },
     {
       cluster_id: "1",
-      id: "debt",
-      name: "debt",
+      id: "Bulldozair",
+      name: "Bulldozair",
       rank: 0.0008580352499509854,
-      degrees: 20
-    },
-    {
-      cluster_id: "1",
-      id: "develop",
-      name: "develop",
-      rank: 0.0008128245326800167,
-      degrees: 11
-    },
-    {
-      cluster_id: "1",
-      id: "homeowner",
-      name: "homeowner",
-      rank: 0.0008006597744427253,
-      degrees: 18
-    },
-    {
-      cluster_id: "1",
-      id: "wish",
-      name: "wish",
-      rank: 0.0007733683408262328,
-      degrees: 10
-    },
-    {
-      cluster_id: "1",
-      id: "kid",
-      name: "kid",
-      rank: 0.0007150263838319798,
-      degrees: 6
-    },
-    {
-      cluster_id: "1",
-      id: "earn",
-      name: "earn",
-      rank: 0.0007138226840412859,
-      degrees: 9
-    },
-    {
-      cluster_id: "1",
-      id: "step",
-      name: "step",
-      rank: 0.0006966063340289187,
-      degrees: 8
-    },
-    {
-      cluster_id: "1",
-      id: "peryear",
-      name: "peryear",
-      rank: 0.0006947322568601673,
-      degrees: 8
-    },
-    {
-      cluster_id: "1",
-      id: "life",
-      name: "life",
-      rank: 0.0006927028263479908,
-      degrees: 5
-    },
-    {
-      cluster_id: "1",
-      id: "difficult",
-      name: "difficult",
-      rank: 0.000656993916593417,
-      degrees: 14
-    },
-    {
-      cluster_id: "1",
-      id: "disability",
-      name: "disability",
-      rank: 0.0006392278705932969,
-      degrees: 8
-    },
-    {
-      cluster_id: "1",
-      id: "spend",
-      name: "spend",
-      rank: 0.0006371468209080793,
-      degrees: 19
-    },
-    {
-      cluster_id: "1",
-      id: "net",
-      name: "net",
-      rank: 0.0006129534737808152,
-      degrees: 7
-    },
-    {
-      cluster_id: "1",
-      id: "resource",
-      name: "resource",
-      rank: 0.0005976874345961341,
-      degrees: 7
+      location: "Frankreich",
+      fillcolor: "#2C65BF",
+      link: "https://www.bulldozair.com/",
+      degrees: 1200
     },
     {
       id: "2",
@@ -1296,38 +1262,25 @@ const data = {
   ],
   links: [
     { source: "1", target: "Alasco" },
-    { source: "1", target: "income" },
-    { source: "1", target: "tax" },
-    { source: "1", target: "help" },
-    { source: "1", target: "money" },
-    { source: "1", target: "month" },
-    { source: "1", target: "pay" },
-    { source: "1", target: "homeless" },
-    { source: "1", target: "afford" },
-    { source: "1", target: "find" },
-    { source: "1", target: "stay" },
-    { source: "1", target: "invest" },
-    { source: "1", target: "save" },
-    { source: "1", target: "person" },
-    { source: "1", target: "invancouver" },
-    { source: "1", target: "lease" },
-    { source: "1", target: "extra" },
+    { source: "1", target: "Sablono" },
+    { source: "1", target: "LandTech" },
+    { source: "1", target: "Digital Engineering Solutions" },
+    { source: "1", target: "PlanRadar" },
+    { source: "1", target: "Alice Technologies" },
+    { source: "1", target: "swino" },
+    { source: "1", target: "GBuilder" },
+    { source: "1", target: "CAPMO" },
+    { source: "1", target: "Scaled Robotics" },
+    { source: "1", target: "SWAPP" },
+    { source: "1", target: "Novade" },
+    { source: "1", target: "Nodes & Links" },
+    { source: "1", target: "Buildots" },
+    { source: "1", target: "VU.CITY" },
+    { source: "1", target: "testfit" },
+    { source: "1", target: "buildingradar" },
     { source: "1", target: "process" },
-    { source: "1", target: "charge" },
-    { source: "1", target: "debt" },
-    { source: "1", target: "develop" },
-    { source: "1", target: "homeowner" },
-    { source: "1", target: "wish" },
-    { source: "1", target: "kid" },
-    { source: "1", target: "earn" },
-    { source: "1", target: "step" },
-    { source: "1", target: "peryear" },
-    { source: "1", target: "life" },
-    { source: "1", target: "difficult" },
-    { source: "1", target: "disability" },
-    { source: "1", target: "spend" },
-    { source: "1", target: "net" },
-    { source: "1", target: "resource" },
+    { source: "1", target: "Propster" },
+    { source: "1", target: "Bulldozair" },
     { source: "2", target: "area" },
     { source: "2", target: "work" },
     { source: "2", target: "space" },
@@ -1487,7 +1440,7 @@ const data = {
 };
 
 data.nodes.forEach((node) => {
-  node.val = node.cluster_size * 10 || node.degrees / 30;
+  node.val = node.cluster_size * 10 || node.degrees / 150;
   if (node.isClusterNode) {
     node.clusterId = null;
   } else node.clusterId = node.cluster_id;

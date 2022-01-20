@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useEffect, useRef, useState, useMemo } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import ForceGraph2D from "react-force-graph-2d";
 import * as d3 from "d3";
 import {
@@ -28,14 +27,14 @@ function App() {
   const forceRef = useRef();
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(-40);
-    forceRef.current.d3Force("link").distance(30);
-    forceRef.current.d3Force("charge").distanceMax(60);
+    forceRef.current.d3Force("charge").strength(-200);
+    forceRef.current.d3Force("link").distance(7);
+    forceRef.current.d3Force("charge").distanceMax(4);
     forceRef.current.d3Force(
       "collide",
-      d3.forceCollide().radius((node) => {
+      d3.forceCollide().radius((node) => {  
         return node.isClusterNode ? node.val / 10 : node.val;
-        //  return node.cluster_size ? node.cluster_size : node.degrees / 100;
+        //return node.cluster_size ? node.cluster_size : node.degrees / 100;
       })
     );
   }, []);
@@ -53,40 +52,29 @@ function App() {
     }
   };
 
-/*
-  var handleNodeClick = function(node){
-    //console.log("forcegraph click on ",node)
-    if(node){
-        var newPageUrl = node.link
-        window.open(newPageUrl, "_blank") //to open new p
-    }
-  }
-  */
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
-      forceRef.current.zoom(9, 400);
+      forceRef.current.zoom(4.5, 400);
       forceRef.current.centerAt(node.x, node.y, 400);
     } else if (!collapsedClusters.includes(node.cluster_id)) {
-      //var newPageUrl = "www.google.de"
-      window.open('www.google.de','_blank') //to open new p
+      if (node.link){
+        window.open(node.link,'_blank') 
+      }
     }
   };
 
-  const toggleCluster = (node, clusterId) => {
+  const toggleCluster = (clusterId) => {
     if (hiddenClusters.includes(clusterId)) {
       setHiddenClusters(hiddenClusters.filter((id) => id !== clusterId));
   
     } else {
       setHiddenClusters([...hiddenClusters, clusterId]);
-      
     }
     if (!collapsedClusters.includes(clusterId)) {
       toggleClusterCollapse(clusterId);
-      
     }
   };
-
   const graphData = useMemo(() => {
     return {
       nodes: projectMap[activeProject].data.nodes.filter(
@@ -101,57 +89,38 @@ function App() {
     setCollapsedClusters(projectMap[activeProject].clusterIds);
     forceRef.current.zoomToFit();
   };
-
  
- 
-
   return (
-    <div className="App">
-      
-      <h1>BAUINDUSTRIE</h1>
-      
-      
-      {Object.keys(projectMap).map((project) => (
-        
+    <div className="App">     
+      <h1>ENTREPRENEUR BAUINDUSTRIE</h1>
+      {Object.keys(projectMap).map((project) => (       
         <button
           key={project}
           onClick={() => {
             setActiveProject(project);
-          }}
-        >
+          }}>
           {project}
-        </button>
-        
+        </button>        
       ))}
-      <hr />
       <button onClick={reset}>RESET</button>
-      <hr />
-      <button onClick={<a href="www.google.de"></a>}>Google</button>
-      <hr />
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {projectMap[activeProject].clusters.map((cluster) => (
-           
-          <button
+           <button
             key={cluster.id}
-            
             onClick={() => {
               toggleCluster(cluster.id);
             }}
           >
             {cluster.name}
           </button>
-
-
-
-          
         ))}
       </div>
       <div style={{ backgroundColor: "rgb(237, 239, 240)" }}>
         <ForceGraph2D
           width={window.innerWidth}
-          height={window.innerHeight-300}
-          minZoom={1}
-          maxZoom={40}
+          height={window.innerHeight-150}
+          minZoom={2}
+          maxZoom={20}
           ref={forceRef}
           onNodeClick={handleNodeClick}
           graphData={graphData}
@@ -166,12 +135,11 @@ function App() {
             setInitialCenter(false);
           }}
           nodeCanvasObjectMode={() => "after"}
-          nodeCanvasObject={(node, ctx, globalScale) => 
-              
+          nodeCanvasObject={(node, ctx, globalScale) =>  
             {
             const label = node.name;
             const labelP = node.nameP;
-            const locationlabel = <a href="www.google.de">Link</a>;
+            const locationlabel = node.location;
             node.color = node.fillcolor;
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
@@ -186,9 +154,12 @@ function App() {
               ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);     
             } else if (node.isClusterNode) {
               ctx.fillText(label, node.x, node.y);      
-            } else if (globalScale >= 4.5) {
-              ctx.fillText(label, node.x, node.y + 0);
-              ctx.fillText(locationlabel, node.x, node.y + 1.0 * fontSize);
+            } else if (globalScale >= 3) {
+              ctx.font = `bold ${2}px Sans-Serif`;
+              ctx.fillStyle = "black";
+              ctx.fillText(label, node.x, node.y + 5);
+              ctx.font = `${1.5}px Sans-Serif`;
+              ctx.fillText(locationlabel, node.x, node.y + 7);
             } 
           }}
 
@@ -211,7 +182,6 @@ function App() {
               return false;
             } else return true;
           }}
-          
         />
       </div>
     </div>
