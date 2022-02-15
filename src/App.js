@@ -8,7 +8,6 @@ import {
   clusters as p2clusters
 } from "./CLUSTERSTARTUP.js";
 
-
 const projectMap = {
   STARTUP: {
     data: p2data,
@@ -27,13 +26,14 @@ function App() {
   const forceRef = useRef();
 
   useEffect(() => {
-    forceRef.current.d3Force("charge").strength(-200);
-    forceRef.current.d3Force("link").distance(7);
-    forceRef.current.d3Force("charge").distanceMax(4);
+    forceRef.current.d3Force("charge").strength(0);
+    forceRef.current.d3Force("link").distance(12);
+    forceRef.current.d3Force("charge").distanceMax(6);
     forceRef.current.d3Force(
       "collide",
-      d3.forceCollide().radius((node) => {  
-        return node.isClusterNode ? node.val / 10 : node.val;
+      d3.forceCollide().radius((node) => { 
+        //def laenge der Links
+        return node.isClusterNode ? node.val / 12 : node.val;
         //return node.cluster_size ? node.cluster_size : node.degrees / 100;
       })
     );
@@ -89,7 +89,10 @@ function App() {
     setCollapsedClusters(projectMap[activeProject].clusterIds);
     forceRef.current.zoomToFit();
   };
- 
+
+const image = new Image(60, 45); 
+image.src = './images/test.png';
+
   return (
     <div className="App">     
       <h1>ENTREPRENEUR BAUINDUSTRIE</h1>
@@ -110,12 +113,12 @@ function App() {
             onClick={() => {
               toggleCluster(cluster.id);
             }}
-          >
+           >
             {cluster.name}
           </button>
         ))}
       </div>
-      <div style={{ backgroundColor: "rgb(237, 239, 240)" }}>
+      <div style={{ backgroundColor: "rgb(237, 239, 240)"}}>
         <ForceGraph2D
           width={window.innerWidth}
           height={window.innerHeight-150}
@@ -126,8 +129,9 @@ function App() {
           graphData={graphData}
           cooldownTicks={50}
           nodeRelSize={1}
-          linkWidth={1}
+          linkWidth={2}
           font-weight={2000}
+          
           onEngineStop={() => {
             if (initialCenter) {
               forceRef.current.zoomToFit();
@@ -136,7 +140,7 @@ function App() {
           }}
           nodeCanvasObjectMode={() => "after"}
           nodeCanvasObject={(node, ctx, globalScale) =>  
-            {
+          {
             const label = node.name;
             const labelP = node.nameP;
             const locationlabel = node.location;
@@ -144,22 +148,38 @@ function App() {
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
               : 14 / (globalScale * 1.2);
-            ctx.font = `${fontSize-0.5}px Sans-Serif`;
+            ctx.font = `${fontSize-1.4}px TTNormsPro-Bold`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = node.color ? "white" : "black"; //node.color;
-            
+                    
             if (node.isClusterNode && node.isParagraph) {
               ctx.fillText(label, node.x, node.y);
-              ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);     
+              ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);
+              
+                  
             } else if (node.isClusterNode) {
-              ctx.fillText(label, node.x, node.y);      
+              ctx.fillText(label, node.x, node.y);  
+                  
             } else if (globalScale >= 3) {
-              ctx.font = `bold ${2}px Sans-Serif`;
+              //load Image
+              var imgload = new Image(5,5);
+              imgload.src = node.testimg;
+              //render Image ohne Laggy function
+              if ((!node.x && isNaN(node.x)) || (!node.y && isNaN(node.y))) {
+                return;
+              }
+              if (imgload) {
+                ctx.drawImage(imgload, node.x -2.5, node.y -2.5, 5,5);
+              }
+
+              ctx.font = `bold ${2}px TTNormsPro-Bold`;
               ctx.fillStyle = "black";
               ctx.fillText(label, node.x, node.y + 5);
-              ctx.font = `${1.5}px Sans-Serif`;
+              ctx.font = `${1.5}px TTNormsPro-Italic`;
               ctx.fillText(locationlabel, node.x, node.y + 7);
+              node.color = "white";
+                                                      
             } 
           }}
 
