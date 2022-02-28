@@ -95,7 +95,7 @@ image.src = './images/test.png';
 
   return (
     <div className="App">     
-      <h1>ENTREPRENEUR BAUINDUSTRIE</h1>
+      <h1>CONTECH START-UP MAP</h1>
       {Object.keys(projectMap).map((project) => (       
         <button
           key={project}

@@ -358,136 +358,161 @@ const data = {
     },
     {
       cluster_id: "2",
-      id: "private",
-      name: "private",
+      id: "Agora",
+      name: "Agora",
+      location: "USA",
+      link: "https://www.helloagora.com/",
+      img: "./images/test.png",
+      testimg: require("./images/Agora.png"),
+      fillcolor: "#071B50",
       rank: 0.0015587842976087746,
-      degrees: 22
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "available",
-      name: "available",
+      id: "Modulize",
+      name: "Modulize",
+      location: "Norwegen",
+      link: "https://www.modulize.io/",
+      img: "./images/test.png",
+      testimg: require("./images/Modulize.png"),
+      fillcolor: "#071B50",
       rank: 0.0014118318821684456,
-      degrees: 19
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "currently",
-      name: "currently",
+      id: "Saqara",
+      name: "Saqara",
+      location: "USA",
+      link: "https://saqara.com/en/",
+      img: "./images/test.png",
+      testimg: require("./images/Saqara.png"),
+      fillcolor: "#071B50",
       rank: 0.0013943568193390517,
-      degrees: 12
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "social",
-      name: "social",
+      id: "Gropyus",
+      name: "Gropyus",
+      location: "Österreich",
+      link: "https://gropyus.com",
+      img: "./images/test.png",
+      testimg: require("./images/Gropyus.png"),
+      fillcolor: "#071B50",
       rank: 0.0013194532607881523,
-      degrees: 22
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "affordability",
-      name: "affordability",
+      id: "Modulous",
+      name: "Modulous",
+      location: "England",
+      link: "https://www.modulous.com/",
+      img: "./images/test.png",
+      testimg: require("./images/Modulous.png"),
+      fillcolor: "#071B50",
       rank: 0.0012903950695549054,
-      degrees: 19
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "individual",
-      name: "individual",
+      id: "Cosuno",
+      name: "Cosuno",
+      location: "Deutschland",
+      link: "https://www.cosuno.de/",
+      img: "./images/test.png",
+      testimg: require("./images/Cosuno.png"),
+      fillcolor: "#071B50",
       rank: 0.001074486066376247,
-      degrees: 12
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "care",
-      name: "care",
+      id: "Hesus",
+      name: "Hesus",
+      location: "Frankreich",
+      link: "https://hesus.eu/de/hauptseite/",
+      img: "./images/test.png",
+      testimg: require("./images/Hesus.png"),
+      fillcolor: "#071B50",
       rank: 0.0009636631118320567,
-      degrees: 13
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "outside",
-      name: "outside",
+      id: "Flexcavo",
+      name: "Flexcavo",
+      location: "Deutschland",
+      link: "https://www.flexcavo.de/",
+      img: "./images/test.png",
+      testimg: require("./images/Flexcavo.png"),
+      fillcolor: "#071B50",
       rank: 0.0008327066375551184,
-      degrees: 8
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "health",
-      name: "health",
+      id: "ecoworks",
+      name: "ecoworks",
+      location: "Deutschland",
+      link: "https://www.ecoworks.tech",
+      img: "./images/test.png",
+      testimg: require("./images/ecoworks.png"),
+      fillcolor: "#071B50",
       rank: 0.0008104487788279386,
-      degrees: 9
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "quality",
-      name: "quality",
+      id: "Trusstor",
+      name: "Trusstor",
+      location: "Israel",
+      link: "https://trusstor.com/",
+      img: "./images/test.png",
+      testimg: require("./images/Trusstor.png"),
+      fillcolor: "#071B50",
       rank: 0.0007891703995841135,
-      degrees: 15
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "day",
-      name: "day",
+      id: "wastebox",
+      name: "wastebox",
+      cluster_id: "2",
+      location: "Österreich",
+      link: "https://www.wastebox.biz/",
+      img: "./images/test.png",
+      testimg: require("./images/wastebox.png"),
+      fillcolor: "#071B50",
       rank: 0.0007648601153706948,
-      degrees: 9
+      degrees: 1200
+
     },
     {
       cluster_id: "2",
-      id: "source",
-      name: "source",
+      id: "BaoLiving",
+      name: "BaoLiving",
+      location: "Österreich",
+      link: "https://www.baoliving.com",
+      img: "./images/test.png",
+      testimg: require("./images/BaoLiving.png"),
+      fillcolor: "#071B50",
       rank: 0.0007385023729992138,
-      degrees: 5
+      degrees: 1200
     },
     {
       cluster_id: "2",
-      id: "volunteer",
-      name: "volunteer",
+      id: "woodyhousing",
+      name: "woodyhousing",
+      location: "Niederlande",
+      link: "https://www.woodyshousing.com",
+      img: "./images/test.png",
+      testimg: require("./images/woodyhousing.png"),
+      fillcolor: "#071B50",
       rank: 0.0006778205632132275,
-      degrees: 3
-    },
-    {
-      cluster_id: "2",
-      id: "sector",
-      name: "sector",
-      rank: 0.0006347238469565776,
-      degrees: 11
-    },
-    {
-      cluster_id: "2",
-      id: "investment",
-      name: "investment",
-      rank: 0.0006344324598323271,
-      degrees: 19
-    },
-    {
-      cluster_id: "2",
-      id: "death",
-      name: "death",
-      rank: 0.0006273897809840992,
-      degrees: 2
-    },
-    {
-      cluster_id: "2",
-      id: "bank",
-      name: "bank",
-      rank: 0.0006182921492677392,
-      degrees: 5
-    },
-    {
-      cluster_id: "2",
-      id: "good",
-      name: "good",
-      rank: 0.000609196634945775,
-      degrees: 20
-    },
-    {
-      cluster_id: "2",
-      id: "hate",
-      name: "hate",
-      rank: 0.0005946904863069159,
-      degrees: 5
+      degrees: 1200
     },
     {
       id: "3",
@@ -499,269 +524,243 @@ const data = {
     },
     {
       cluster_id: "3",
-      id: "home",
-      name: "home",
+      id: "LightYX",
+      name: "LightYX",
+      location: "Isreal",
+      link: "https://www.lightyx.com/",
+      img: "./images/test.png",
+      testimg: require("./images/LightYX.png"),
+      fillcolor: "#55CCF4",
       rank: 0.01046736307182641,
-      degrees: 148
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "unit",
-      name: "unit",
+      id: "HausBots",
+      name: "HausBots",
+      location: "England",
+      link: "https://hausbots.com",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.005348289200228546,
-      degrees: 72
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "family",
-      name: "family",
+      id: "CivRobotics",
+      name: "CivRobotics",
+      location: "Israel",
+      link: "http://www.civrobotics.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.005089337904407591,
-      degrees: 68
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "suite",
-      name: "suite",
+      id: "Cobod",
+      name: "Cobod",
+      location: "England",
+      link: "https://cobod.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0026042001932058165,
-      degrees: 33
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "co",
-      name: "co",
+      id: "BuiltRobotics",
+      name: "BuiltRobotics",
+      location: "England",
+      link: "http://builtrobotics.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0024870360394715924,
-      degrees: 42
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "exist",
-      name: "exist",
+      id: "UltraWis",
+      name: "UltraWis",
+      location: "Israel",
+      link: "http://www.ultrawis.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0024054804293446265,
-      degrees: 54
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "permit",
-      name: "permit",
+      id: "MachineMax",
+      name: "MachineMax",
+      location: "England",
+      link: "https://machinemax.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0018990652305137575,
-      degrees: 15
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "include",
-      name: "include",
+      id: "CyBe",
+      name: "CyBe",
+      location: "Niederlande",
+      link: "https://www.cybe.eu/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0017760916113226397,
-      degrees: 31
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "single",
-      name: "single",
+      id: "SafeAI",
+      name: "SafeAI",
+      location: "Israel",
+      link: "https://safeai.ai/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0016551609961962806,
-      degrees: 28
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "room",
-      name: "room",
+      id: "DustyRobotics",
+      name: "DustyRobotics",
+      location: "USA",
+      link: "https://www.dustyrobotics.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0016351182748503838,
-      degrees: 27
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "facility",
-      name: "facility",
+      id: "INTSITE",
+      name: "INTSITE",
+      location: "Israel",
+      link: "https://www.intsite.ai/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0015442773339676681,
-      degrees: 18
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "lot",
-      name: "lot",
+      id: "MX3D",
+      name: "MX3D",
+      location: "Niederlande",
+      link: "http://www.mx3d.com/",
+      img: "./images/test.png",
+      testimg: require("./images/MX3D.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0015247622608858156,
-      degrees: 26
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "living",
-      name: "living",
+      id: "Wingtra",
+      name: "Wingtra",
+      location: "Schweiz",
+      link: "https://wingtra.com/",
+      img: "./images/test.png",
+      testimg: require("./images/Wingtra.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0014666980126206088,
-      degrees: 30
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "large",
-      name: "large",
+      id: "Versatile",
+      name: "Versatile",
+      location: "Israel",
+      link: "https://www.versatile.ai/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.00138421214546743,
-      degrees: 31
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "number",
-      name: "number",
+      id: "Converge",
+      name: "Converge",
+      location: "England",
+      link: "https://www.converge.io/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0013354094167406384,
-      degrees: 30
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "secondary",
-      name: "secondary",
+      id: "PrintStones",
+      name: "PrintStones",
+      location: "Österreich",
+      link: "https://www.printstones.eu/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0011993336596113726,
-      degrees: 16
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "urban",
-      name: "urban",
+      id: "HyperionRobotics",
+      name: "HyperionRobotics",
+      location: "Finnland",
+      link: "https://www.hyperionrobotics.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HyperionRobotics.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0010954920294487355,
-      degrees: 12
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "child",
-      name: "child",
+      id: "KEWAZO",
+      name: "KEWAZO",
+      location: "Deutschland",
+      link: "https://www.kewazo.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0010924667795299853,
-      degrees: 13
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "add",
-      name: "add",
+      id: "MOBBOT",
+      name: "MOBBOT",
+      location: "Schweiz",
+      link: "https://www.mobbot.ch/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0009743343076067844,
-      degrees: 15
+      degrees: 1200
     },
     {
       cluster_id: "3",
-      id: "renovate",
-      name: "renovate",
+      id: "Okibo",
+      name: "Okibo",
+      location: "Israel",
+      link: "https://www.okibo.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#55CCF4",
       rank: 0.0009541708776815344,
-      degrees: 13
-    },
-    {
-      cluster_id: "3",
-      id: "funding",
-      name: "funding",
-      rank: 0.000939318667371718,
-      degrees: 16
-    },
-    {
-      cluster_id: "3",
-      id: "upgrade",
-      name: "upgrade",
-      rank: 0.0009191598277905842,
-      degrees: 9
-    },
-    {
-      cluster_id: "3",
-      id: "couple",
-      name: "couple",
-      rank: 0.0009115509477096752,
-      degrees: 11
-    },
-    {
-      cluster_id: "3",
-      id: "standard",
-      name: "standard",
-      rank: 0.000900083271951102,
-      degrees: 13
-    },
-    {
-      cluster_id: "3",
-      id: "bridge",
-      name: "bridge",
-      rank: 0.0008533050689583273,
-      degrees: 7
-    },
-    {
-      cluster_id: "3",
-      id: "come",
-      name: "come",
-      rank: 0.0008517386793546476,
-      degrees: 9
-    },
-    {
-      cluster_id: "3",
-      id: "condition",
-      name: "condition",
-      rank: 0.0008404628355359313,
-      degrees: 13
-    },
-    {
-      cluster_id: "3",
-      id: "additional",
-      name: "additional",
-      rank: 0.0008008316868480681,
-      degrees: 15
-    },
-    {
-      cluster_id: "3",
-      id: "size",
-      name: "size",
-      rank: 0.0007683227508202471,
-      degrees: 14
-    },
-    {
-      cluster_id: "3",
-      id: "repair",
-      name: "repair",
-      rank: 0.000756563671197582,
-      degrees: 3
-    },
-    {
-      cluster_id: "3",
-      id: "read",
-      name: "read",
-      rank: 0.0007448145083410692,
-      degrees: 11
-    },
-    {
-      cluster_id: "3",
-      id: "vulnerable",
-      name: "vulnerable",
-      rank: 0.0007406161995302539,
-      degrees: 11
-    },
-    {
-      cluster_id: "3",
-      id: "parking",
-      name: "parking",
-      rank: 0.0006812656978601132,
-      degrees: 4
-    },
-    {
-      cluster_id: "3",
-      id: "structure",
-      name: "structure",
-      rank: 0.0006545523506544306,
-      degrees: 12
-    },
-    {
-      cluster_id: "3",
-      id: "maintenance",
-      name: "maintenance",
-      rank: 0.0006391129336113497,
-      degrees: 10
-    },
-    {
-      cluster_id: "3",
-      id: "improve",
-      name: "improve",
-      rank: 0.0006217024830547798,
-      degrees: 13
-    },
-    {
-      cluster_id: "3",
-      id: "plus",
-      name: "plus",
-      rank: 0.0006052714512310334,
-      degrees: 10
-    },
-    {
-      cluster_id: "3",
-      id: "economic",
-      name: "economic",
-      rank: 0.0005995047515773711,
-      degrees: 7
+      degrees: 1200
     },
     {
       id: "4",
@@ -775,326 +774,245 @@ const data = {
     },
     {
       cluster_id: "4",
-      id: "rent",
-      name: "rent",
+      id: "Triqbriq",
+      name: "Triqbriq",
+      location: "Deutschland",
+      link: "https://triqbriq.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.008746035576714743,
-      degrees: 123
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "affordable",
-      name: "affordable",
+      id: "Madaster",
+      name: "Madaster",
+      location: "Deutschland",
+      link: "https://madaster.de/",
+      img: "./images/test.png",
+      testimg: require("./images/Madaster.png"),
+      fillcolor: "#0218AC",
       rank: 0.005923725638974821,
-      degrees: 83
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "build",
-      name: "build",
+      id: "CarbonUpcycling",
+      name: "CarbonUpcycling",
+      location: "Kanada",
+      link: "https://www.carbonupcycling.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.004908263018400133,
-      degrees: 85
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "new",
-      name: "new",
+      id: "MadeofAir",
+      name: "MadeofAir",
+      location: "Deutschland",
+      link: "https://www.madeofair.com/",
+      img: "./images/test.png",
+      testimg: require("./images/MadeofAir.png"),
+      fillcolor: "#0218AC",
       rank: 0.004689384632736601,
-      degrees: 84
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "building",
-      name: "building",
+      id: "Mixteresting",
+      name: "Mixteresting",
+      location: "Österreich",
+      link: "http://www.mixteresting.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.004522848897620551,
-      degrees: 76
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "need",
-      name: "need",
+      id: "Upcyclea",
+      name: "Upcyclea",
+      location: "Frankreich",
+      link: "https://www.upcyclea.com/",
+      img: "./images/test.png",
+      testimg: require("./images/Upcyclea.png"),
+      fillcolor: "#0218AC",
       rank: 0.004496205780160409,
-      degrees: 84
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "house",
-      name: "house",
+      id: "Sonocrete",
+      name: "Sonocrete",
+      location: "Deutschland",
+      link: "https://www.sonocrete.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0032575767681323523,
-      degrees: 60
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "increase",
-      name: "increase",
+      id: "Concular",
+      name: "Concular",
+      location: "Deutschland",
+      link: "https://concular.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0030317010403932768,
-      degrees: 54
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "developer",
-      name: "developer",
+      id: "Carbicrete",
+      name: "Carbicrete",
+      location: "Kanada",
+      link: "https://www.carbicrete.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.002244632512105981,
-      degrees: 47
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "require",
-      name: "require",
+      id: "CloudCycle",
+      name: "CloudCycle",
+      location: "England",
+      link: "http://www.cloudcycle.com/",
+      img: "./images/test.png",
+      testimg: require("./images/CloudCycle.png"),
+      fillcolor: "#0218AC",
       rank: 0.001802901052218228,
-      degrees: 40
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "development",
-      name: "development",
+      id: "ECOncrete",
+      name: "ECOncrete",
+      location: "Israel",
+      link: "https://econcretetech.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0017742371096512728,
-      degrees: 24
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "smoke",
-      name: "smoke",
+      id: "neustark",
+      name: "neustark",
+      location: "Schweiz",
+      link: "http://www.neustark.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0016223610094635475,
-      degrees: 16
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "household",
-      name: "household",
+      id: "Oxara",
+      name: "Oxara",
+      location: "Schweiz",
+      link: "https://www.oxara.ch/",
+      img: "./images/test.png",
+      testimg: require("./images/Oxara.png"),
+      fillcolor: "#0218AC",
       rank: 0.0015925870405303552,
-      degrees: 17
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "purpose",
-      name: "purpose",
+      id: "CarbonBuilt",
+      name: "CarbonBuilt",
+      location: "USA",
+      link: "https://www.carbonbuilt.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0015422242861376702,
-      degrees: 26
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "design",
-      name: "design",
+      id: "Carbonauten",
+      name: "Carbonauten",
+      location: "Deutschland",
+      link: "https://www.carbonauten.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0015028441483247398,
-      degrees: 16
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "mortgage",
-      name: "mortgage",
+      id: "Betolar",
+      name: "Betolar",
+      location: "Finnland",
+      link: "https://betolar.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0013910524512628858,
-      degrees: 14
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "purchase",
-      name: "purchase",
+      id: "Polycare",
+      name: "Polycare",
+      location: "Deutschland",
+      link: "https://polycare.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0013767009218013516,
-      degrees: 25
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "stock",
-      name: "stock",
+      id: "alcemy",
+      name: "alcemy",
+      location: "Deutschland",
+      link: "https://alcemy.tech/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.001316614809737473,
-      degrees: 28
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "especially",
-      name: "especially",
+      id: "Basilisk",
+      name: "Basilisk",
+      location: "Niederlande",
+      link: "https://www.basiliskconcrete.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0011994207220094469,
-      degrees: 16
+      degrees: 1200
     },
     {
       cluster_id: "4",
-      id: "shaughnessy",
-      name: "shaughnessy",
+      id: "FenX",
+      name: "FenX",
+      location: "Schweiz",
+      link: "https://www.fenx.ch/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0011813896913417763,
-      degrees: 16
+      degrees: 1200
     },
-    {
-      cluster_id: "4",
-      id: "condo",
-      name: "condo",
-      rank: 0.0011394241645934537,
-      degrees: 27
-    },
-    {
-      cluster_id: "4",
-      id: "close",
-      name: "close",
-      rank: 0.0010609451834015144,
-      degrees: 22
-    },
-    {
-      cluster_id: "4",
-      id: "bedroom",
-      name: "bedroom",
-      rank: 0.0010505979750256383,
-      degrees: 18
-    },
-    {
-      cluster_id: "4",
-      id: "apartment",
-      name: "apartment",
-      rank: 0.0010349525879583203,
-      degrees: 22
-    },
-    {
-      cluster_id: "4",
-      id: "tear",
-      name: "tear",
-      rank: 0.000999405048456351,
-      degrees: 15
-    },
-    {
-      cluster_id: "4",
-      id: "control",
-      name: "control",
-      rank: 0.000969314611191312,
-      degrees: 21
-    },
-    {
-      cluster_id: "4",
-      id: "supply",
-      name: "supply",
-      rank: 0.0009513154174018707,
-      degrees: 13
-    },
-    {
-      cluster_id: "4",
-      id: "actually",
-      name: "actually",
-      rank: 0.0009501007938112096,
-      degrees: 20
-    },
-    {
-      cluster_id: "4",
-      id: "certain",
-      name: "certain",
-      rank: 0.0009426876319571819,
-      degrees: 14
-    },
-    {
-      cluster_id: "4",
-      id: "staff",
-      name: "staff",
-      rank: 0.0008978196207827627,
-      degrees: 14
-    },
-    {
-      cluster_id: "4",
-      id: "daycare",
-      name: "daycare",
-      rank: 0.0008854891616434863,
-      degrees: 12
-    },
-    {
-      cluster_id: "4",
-      id: "old",
-      name: "old",
-      rank: 0.000884979190753156,
-      degrees: 20
-    },
-    {
-      cluster_id: "4",
-      id: "site",
-      name: "site",
-      rank: 0.0008816821807726108,
-      degrees: 18
-    },
-    {
-      cluster_id: "4",
-      id: "great",
-      name: "great",
-      rank: 0.0008313583860303913,
-      degrees: 19
-    },
-    {
-      cluster_id: "4",
-      id: "class",
-      name: "class",
-      rank: 0.0008272627593603093,
-      degrees: 5
-    },
-    {
-      cluster_id: "4",
-      id: "incentive",
-      name: "incentive",
-      rank: 0.0007964933885733181,
-      degrees: 20
-    },
-    {
-      cluster_id: "4",
-      id: "heritage",
-      name: "heritage",
-      rank: 0.0007595619448725505,
-      degrees: 11
-    },
-    {
-      cluster_id: "4",
-      id: "decade",
-      name: "decade",
-      rank: 0.0007365750235457053,
-      degrees: 13
-    },
-    {
-      cluster_id: "4",
-      id: "inthe",
-      name: "inthe",
-      rank: 0.0007247573936932378,
-      degrees: 12
-    },
-    {
-      cluster_id: "4",
-      id: "encourage",
-      name: "encourage",
-      rank: 0.0006677118544064943,
-      degrees: 17
-    },
-    {
-      cluster_id: "4",
-      id: "act",
-      name: "act",
-      rank: 0.0006642346005193863,
-      degrees: 5
-    },
-    {
-      cluster_id: "4",
-      id: "world",
-      name: "world",
-      rank: 0.000652410718423075,
-      degrees: 3
-    },
-    {
-      cluster_id: "4",
-      id: "construction",
-      name: "construction",
-      rank: 0.0006378600518590521,
-      degrees: 12
-    },
-    {
-      cluster_id: "4",
-      id: "grocery",
-      name: "grocery",
-      rank: 0.0006323982389077736,
-      degrees: 5
-    },
-    {
-      cluster_id: "4",
-      id: "lose",
-      name: "lose",
-      rank: 0.0006173486586811474,
-      degrees: 13
-    },
-    {
-      cluster_id: "4",
-      id: "financial",
-      name: "financial",
-      rank: 0.00060301483052814,
-      degrees: 11
-    },
+    
     {
       id: "5",
       fillcolor: "#4F75A2",
@@ -1105,236 +1023,232 @@ const data = {
     },
     {
       cluster_id: "5",
-      id: "city",
-      name: "city",
+      id: "ClevAir",
+      name: "ClevAir",
+      location: "Norwegen",
+      link: "http://www.clevair.io/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.011023531289674876,
-      degrees: 150
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "resident",
-      name: "resident",
+      id: "Mondas",
+      name: "Mondas",
+      location: "Deutschland",
+      link: "https://www.mondas-iot.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.002896883191032499,
-      degrees: 55
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "fund",
-      name: "fund",
+      id: "Kindow",
+      name: "Kindow",
+      location: "Niederlande",
+      link: "https://www.kindowblinds.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.002783729239371409,
-      degrees: 52
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "provide",
-      name: "provide",
+      id: "ISAAC",
+      name: "ISAAC",
+      location: "Italien",
+      link: "https://isaacantisismica.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0026162974138508777,
-      degrees: 71
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "renter",
-      name: "renter",
+      id: "Mixergy",
+      name: "Mixergy",
+      location: "England",
+      link: "https://www.mixergy.co.uk/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0023417462747837383,
-      degrees: 39
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "small",
-      name: "small",
+      id: "Envio",
+      name: "Envio",
+      location: "Deutschland",
+      link: "https://enviosystems.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0018764897485041873,
-      degrees: 37
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "use",
-      name: "use",
+      id: "interpanel",
+      name: "interpanel",
+      location: "Deutschland",
+      link: "https://www.interpanel.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0016775537417781665,
-      degrees: 34
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "service",
-      name: "service",
+      id: "bGrid",
+      name: "bGrid",
+      location: "Niederlande",
+      link: "https://www.bgridsolutions.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0015379159438776704,
-      degrees: 16
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "benefit",
-      name: "benefit",
+      id: "Shayp",
+      name: "Shayp",
+      location: "Belgien",
+      link: "https://www.shayp.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0014984151719625797,
-      degrees: 26
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "revenue",
-      name: "revenue",
+      id: "KUGU",
+      name: "KUGU",
+      location: "Deutschland",
+      link: "https://www.kugu-home.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.001474688162066299,
-      degrees: 26
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "homes",
-      name: "homes",
+      id: "PHYSEE",
+      name: "PHYSEE",
+      location: "Niederlande",
+      link: "https://www.physee.eu/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0013645711115011297,
-      degrees: 24
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "free",
-      name: "free",
+      id: "vilisto",
+      name: "vilisto",
+      location: "Deutschland",
+      link: "https://www.vilisto.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0012948287191078007,
-      degrees: 30
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "loan",
-      name: "loan",
+      id: "IBIS",
+      name: "IBIS",
+      location: "Niederlande",
+      link: "https://www.ibispower.eu/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0012649304356317673,
-      degrees: 20
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "future",
-      name: "future",
+      id: "GreenY",
+      name: "GreenY",
+      location: "Schweiz",
+      link: "https://www.green-y.ch/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0012512367115999777,
-      degrees: 14
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "end",
-      name: "end",
+      id: "Wondrwall",
+      name: "Wondrwall",
+      location: "England",
+      link: "https://www.wondrwall.co.uk/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.001231662365600412,
-      degrees: 17
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "street",
-      name: "street",
+      id: "nevisQ",
+      name: "nevisQ",
+      location: "Deutschland",
+      link: "https://www.nevisq.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0011897877850764551,
-      degrees: 8
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "temporary",
-      name: "temporary",
+      id: "DABBEL",
+      name: "DABBEL",
+      location: "Deutschland",
+      link: "https://www.dabbel.eu/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0011679197174071852,
-      degrees: 26
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "business",
-      name: "business",
+      id: "Enerbrain",
+      name: "Enerbrain",
+      location: "Italien",
+      link: "https://www.enerbrain.com/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0011171031151449996,
-      degrees: 24
+      degrees: 1200
     },
     {
       cluster_id: "5",
-      id: "current",
-      name: "current",
+      id: "perto",
+      name: "perto",
+      location: "Deutschland",
+      link: "https://perto.de/",
+      img: "./images/test.png",
+      testimg: require("./images/HausBots.png"),
+      fillcolor: "#0218AC",
       rank: 0.0010813553836846186,
-      degrees: 19
-    },
-    {
-      cluster_id: "5",
-      id: "citizen",
-      name: "citizen",
-      rank: 0.0010800475140708202,
-      degrees: 10
-    },
-    {
-      cluster_id: "5",
-      id: "tiny",
-      name: "tiny",
-      rank: 0.0010620488168619523,
-      degrees: 18
-    },
-    {
-      cluster_id: "5",
-      id: "interest",
-      name: "interest",
-      rank: 0.0010155397245218375,
-      degrees: 16
-    },
-    {
-      cluster_id: "5",
-      id: "big",
-      name: "big",
-      rank: 0.0009544638297239637,
-      degrees: 7
-    },
-    {
-      cluster_id: "5",
-      id: "let",
-      name: "let",
-      rank: 0.0008193154832246992,
-      degrees: 17
-    },
-    {
-      cluster_id: "5",
-      id: "accommodation",
-      name: "accommodation",
-      rank: 0.0007920702686981109,
-      degrees: 11
-    },
-    {
-      cluster_id: "5",
-      id: "local",
-      name: "local",
-      rank: 0.0007439828193589265,
-      degrees: 14
-    },
-    {
-      cluster_id: "5",
-      id: "run",
-      name: "run",
-      rank: 0.0007354740818827688,
-      degrees: 16
-    },
-    {
-      cluster_id: "5",
-      id: "challenge",
-      name: "challenge",
-      rank: 0.0007151067578622419,
-      degrees: 2
-    },
-    {
-      cluster_id: "5",
-      id: "mean",
-      name: "mean",
-      rank: 0.0006891544164263922,
-      degrees: 14
-    },
-    {
-      cluster_id: "5",
-      id: "pedestrian",
-      name: "pedestrian",
-      rank: 0.0006798269382641439,
-      degrees: 9
-    },
-    {
-      cluster_id: "5",
-      id: "situation",
-      name: "situation",
-      rank: 0.0006765295432308,
-      degrees: 6
-    },
-    {
-      cluster_id: "5",
-      id: "meet",
-      name: "meet",
-      rank: 0.0006388441642085915,
-      degrees: 14
-    },
-    {
-      cluster_id: "5",
-      id: "shortage",
-      name: "shortage",
-      rank: 0.0006350008422083106,
-      degrees: 6
-    },
-     
+      degrees: 1200
+    }, 
   
   ],
   links: [
@@ -1365,142 +1279,80 @@ const data = {
     { source: "2", target: "ProperGate" },
     { source: "2", target: "011h" },
     { source: "2", target: "QualisFlow" },
-    { source: "2", target: "private" },
-    { source: "2", target: "available" },
-    { source: "2", target: "currently" },
-    { source: "2", target: "social" },
-    { source: "2", target: "affordability" },
-    { source: "2", target: "individual" },
-    { source: "2", target: "care" },
-    { source: "2", target: "outside" },
-    { source: "2", target: "health" },
-    { source: "2", target: "quality" },
-    { source: "2", target: "day" },
-    { source: "2", target: "source" },
-    { source: "2", target: "volunteer" },
-    { source: "2", target: "sector" },
-    { source: "2", target: "investment" },
-    { source: "2", target: "death" },
-    { source: "2", target: "bank" },
-    { source: "2", target: "good" },
-    { source: "2", target: "hate" },
-    { source: "3", target: "home" },
-    { source: "3", target: "unit" },
-    { source: "3", target: "family" },
-    { source: "3", target: "suite" },
-    { source: "3", target: "co" },
-    { source: "3", target: "exist" },
-    { source: "3", target: "permit" },
-    { source: "3", target: "include" },
-    { source: "3", target: "single" },
-    { source: "3", target: "room" },
-    { source: "3", target: "facility" },
-    { source: "3", target: "lot" },
-    { source: "3", target: "living" },
-    { source: "3", target: "large" },
-    { source: "3", target: "number" },
-    { source: "3", target: "secondary" },
-    { source: "3", target: "urban" },
-    { source: "3", target: "child" },
-    { source: "3", target: "add" },
-    { source: "3", target: "renovate" },
-    { source: "3", target: "funding" },
-    { source: "3", target: "upgrade" },
-    { source: "3", target: "couple" },
-    { source: "3", target: "standard" },
-    { source: "3", target: "bridge" },
-    { source: "3", target: "come" },
-    { source: "3", target: "condition" },
-    { source: "3", target: "additional" },
-    { source: "3", target: "size" },
-    { source: "3", target: "repair" },
-    { source: "3", target: "read" },
-    { source: "3", target: "vulnerable" },
-    { source: "3", target: "parking" },
-    { source: "3", target: "structure" },
-    { source: "3", target: "maintenance" },
-    { source: "3", target: "improve" },
-    { source: "3", target: "plus" },
-    { source: "3", target: "economic" },
-    { source: "4", target: "rent" },
-    { source: "4", target: "affordable" },
-    { source: "4", target: "build" },
-    { source: "4", target: "new" },
-    { source: "4", target: "building" },
-    { source: "4", target: "need" },
-    { source: "4", target: "house" },
-    { source: "4", target: "increase" },
-    { source: "4", target: "developer" },
-    { source: "4", target: "require" },
-    { source: "4", target: "development" },
-    { source: "4", target: "smoke" },
-    { source: "4", target: "household" },
-    { source: "4", target: "purpose" },
-    { source: "4", target: "design" },
-    { source: "4", target: "mortgage" },
-    { source: "4", target: "purchase" },
-    { source: "4", target: "stock" },
-    { source: "4", target: "especially" },
-    { source: "4", target: "shaughnessy" },
-    { source: "4", target: "condo" },
-    { source: "4", target: "close" },
-    { source: "4", target: "bedroom" },
-    { source: "4", target: "apartment" },
-    { source: "4", target: "tear" },
-    { source: "4", target: "control" },
-    { source: "4", target: "supply" },
-    { source: "4", target: "actually" },
-    { source: "4", target: "certain" },
-    { source: "4", target: "staff" },
-    { source: "4", target: "daycare" },
-    { source: "4", target: "old" },
-    { source: "4", target: "site" },
-    { source: "4", target: "great" },
-    { source: "4", target: "class" },
-    { source: "4", target: "incentive" },
-    { source: "4", target: "heritage" },
-    { source: "4", target: "decade" },
-    { source: "4", target: "inthe" },
-    { source: "4", target: "encourage" },
-    { source: "4", target: "act" },
-    { source: "4", target: "world" },
-    { source: "4", target: "construction" },
-    { source: "4", target: "grocery" },
-    { source: "4", target: "lose" },
-    { source: "4", target: "financial" },
-    { source: "5", target: "city" },
-    { source: "5", target: "resident" },
-    { source: "5", target: "fund" },
-    { source: "5", target: "provide" },
-    { source: "5", target: "renter" },
-    { source: "5", target: "small" },
-    { source: "5", target: "use" },
-    { source: "5", target: "service" },
-    { source: "5", target: "benefit" },
-    { source: "5", target: "revenue" },
-    { source: "5", target: "homes" },
-    { source: "5", target: "free" },
-    { source: "5", target: "loan" },
-    { source: "5", target: "future" },
-    { source: "5", target: "end" },
-    { source: "5", target: "street" },
-    { source: "5", target: "temporary" },
-    { source: "5", target: "business" },
-    { source: "5", target: "current" },
-    { source: "5", target: "citizen" },
-    { source: "5", target: "tiny" },
-    { source: "5", target: "interest" },
-    { source: "5", target: "big" },
-    { source: "5", target: "let" },
-    { source: "5", target: "accommodation" },
-    { source: "5", target: "local" },
-    { source: "5", target: "run" },
-    { source: "5", target: "challenge" },
-    { source: "5", target: "mean" },
-    { source: "5", target: "pedestrian" },
-    { source: "5", target: "situation" },
-    { source: "5", target: "meet" },
-    { source: "5", target: "shortage" },
+    { source: "2", target: "Agora" },
+    { source: "2", target: "Modulize" },
+    { source: "2", target: "Saqara" },
+    { source: "2", target: "Gropyus" },
+    { source: "2", target: "Modulous" },
+    { source: "2", target: "Cosuno" },
+    { source: "2", target: "Hesus" },
+    { source: "2", target: "Flexcavo" },
+    { source: "2", target: "ecoworks" },
+    { source: "2", target: "Trusstor" },
+    { source: "2", target: "wastebox" },
+    { source: "2", target: "BaoLiving" },
+    { source: "2", target: "woodyhousing" },
+    { source: "3", target: "LightYX" },
+    { source: "3", target: "HausBots" },
+    { source: "3", target: "CivRobotics" },
+    { source: "3", target: "Cobod" },
+    { source: "3", target: "BuiltRobotics" },
+    { source: "3", target: "UltraWis" },
+    { source: "3", target: "MachineMax" },
+    { source: "3", target: "CyBe" },
+    { source: "3", target: "SafeAI" },
+    { source: "3", target: "DustyRobotics" },
+    { source: "3", target: "INTSITE" },
+    { source: "3", target: "MX3D" },
+    { source: "3", target: "Wingtra" },
+    { source: "3", target: "Versatile" },
+    { source: "3", target: "Converge" },
+    { source: "3", target: "PrintStones" },
+    { source: "3", target: "HyperionRobotics" },
+    { source: "3", target: "KEWAZO" },
+    { source: "3", target: "MOBBOT" },
+    { source: "3", target: "Okibo" },
+   
+    { source: "4", target: "Triqbriq" },
+    { source: "4", target: "Madaster" },
+    { source: "4", target: "CarbonUpcycling" },
+    { source: "4", target: "MadeofAir" },
+    { source: "4", target: "Mixteresting" },
+    { source: "4", target: "Upcyclea" },
+    { source: "4", target: "Sonocrete" },
+    { source: "4", target: "Concular" },
+    { source: "4", target: "Carbicrete" },
+    { source: "4", target: "CloudCycle" },
+    { source: "4", target: "ECOncrete" },
+    { source: "4", target: "neustark" },
+    { source: "4", target: "Oxara" },
+    { source: "4", target: "CarbonBuilt" },
+    { source: "4", target: "Carbonauten" },
+    { source: "4", target: "Betolar" },
+    { source: "4", target: "Polycare" },
+    { source: "4", target: "alcemy" },
+    { source: "4", target: "Basilisk" },
+    { source: "4", target: "FenX" },
+   
+    { source: "5", target: "ClevAir" },
+    { source: "5", target: "Mondas" },
+    { source: "5", target: "Kindow" },
+    { source: "5", target: "ISAAC" },
+    { source: "5", target: "Mixergy" },
+    { source: "5", target: "Envio" },
+    { source: "5", target: "interpanel" },
+    { source: "5", target: "bGrid" },
+    { source: "5", target: "Shayp" },
+    { source: "5", target: "KUGU" },
+    { source: "5", target: "PHYSEE" },
+    { source: "5", target: "vilisto" },
+    { source: "5", target: "IBIS" },
+    { source: "5", target: "GreenY" },
+    { source: "5", target: "Wondrwall" },
+    { source: "5", target: "nevisQ" },
+    { source: "5", target: "DABBEL" },
+    { source: "5", target: "Enerbrain" },
+    { source: "5", target: "perto" },
  
     { source: "1", target: "2" },
     { source: "2", target: "3" },
