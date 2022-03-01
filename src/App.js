@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(0);
     forceRef.current.d3Force("link").distance(12);
-    forceRef.current.d3Force("charge").distanceMax(6);
+    forceRef.current.d3Force("charge").distanceMax(7);
     forceRef.current.d3Force(
       "collide",
       d3.forceCollide().radius((node) => { 
@@ -55,7 +55,7 @@ function App() {
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
-      forceRef.current.zoom(4.5, 400);
+      forceRef.current.zoom(7, 400);
       forceRef.current.centerAt(node.x, node.y, 400);
     } else if (!collapsedClusters.includes(node.cluster_id)) {
       if (node.link){
@@ -123,7 +123,7 @@ image.src = './images/test.png';
           width={window.innerWidth}
           height={window.innerHeight-150}
           minZoom={2}
-          maxZoom={20}
+          maxZoom={200}
           ref={forceRef}
           onNodeClick={handleNodeClick}
           graphData={graphData}
@@ -145,6 +145,7 @@ image.src = './images/test.png';
             const labelP = node.nameP;
             const locationlabel = node.location;
             node.color = node.fillcolor;
+            
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
               : 14 / (globalScale * 1.2);
@@ -154,17 +155,37 @@ image.src = './images/test.png';
             ctx.fillStyle = node.color ? "white" : "black"; //node.color;
                     
             if (node.isClusterNode && node.isParagraph) {
+
+              //else below arc
+              
+              ctx.beginPath();
+              ctx.arc(node.x, node.y, 17, 0, 2 * Math.PI, false);
+              ctx.fillStyle = 'white';
+              ctx.fill();
+
+              ctx.fillStyle = node.color;
               ctx.fillText(label, node.x, node.y);
               ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);
               
                   
             } else if (node.isClusterNode) {
-              ctx.fillText(label, node.x, node.y);  
-                  
+              
+              //else below arc
+              ctx.beginPath();
+              ctx.arc(node.x, node.y, 17, 0, 2 * Math.PI, false);
+              ctx.fillStyle = 'white';
+              ctx.fill();
+              
+              ctx.fillStyle = node.color;
+              ctx.fillText(label, node.x, node.y); 
+          
+ 
+           
             } else if (globalScale >= 3) {
               //load Image
               var imgload = new Image(5,5);
               imgload.src = node.testimg;
+          
               //render Image ohne Laggy function
               if ((!node.x && isNaN(node.x)) || (!node.y && isNaN(node.y))) {
                 return;
@@ -179,6 +200,8 @@ image.src = './images/test.png';
               ctx.font = `${1.5}px TTNormsPro-Italic`;
               ctx.fillText(locationlabel, node.x, node.y + 7);
               node.color = "white";
+
+              
                                                       
             } 
           }}
