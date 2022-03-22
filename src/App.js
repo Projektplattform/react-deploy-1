@@ -235,7 +235,7 @@ image.src = './images/test.png';
            
             } else if (globalScale >= 3) {
               //load Image
-              var imgload = new Image(9,9);
+              var imgload = new Image(5,5);
               imgload.src = node.testimg;
           
               //render Image ohne Laggy function
