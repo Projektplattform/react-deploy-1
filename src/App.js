@@ -2,11 +2,26 @@ import './App.css';
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import ForceGraph2D from "react-force-graph-2d";
 import * as d3 from "d3";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from '@material-ui/icons/Delete';
+import CenterFocusWeak from '@material-ui/icons/CenterFocusWeak';
+import ZoomInIcon from "@material-ui/icons/ZoomIn";
+import ZoomOutIcon from "@material-ui/icons/ZoomOut";
+import ReplayIcon from "@material-ui/icons/Replay";
+import ImageIcon from "@material-ui/icons/Image";
+import CenterFocusWeakIcon from "@material-ui/icons/CenterFocusWeak";
+
 import {
   data as p2data,
   clusterIds as p2ClusterIds,
   clusters as p2clusters
 } from "./CLUSTERSTARTUP.js";
+
+
+
 
 const projectMap = {
   STARTUP: {
@@ -17,6 +32,9 @@ const projectMap = {
 };
 
 function App() {
+  
+  const [zoomSize, setZoomSize] = useState(3);
+
   const [activeProject, setActiveProject] = useState("STARTUP");
   const [initialCenter, setInitialCenter] = useState(true);
   const [collapsedClusters, setCollapsedClusters] = useState(
@@ -44,6 +62,7 @@ function App() {
     setInitialCenter(true);
   }, [activeProject]);
 
+  
   const toggleClusterCollapse = (clusterId) => {
     if (collapsedClusters.includes(clusterId)) {
       setCollapsedClusters(collapsedClusters.filter((id) => id !== clusterId));
@@ -94,34 +113,67 @@ const image = new Image(60, 45);
 image.src = './images/test.png';
 
   return (
-    <div className="App">     
-      <h1>CONTECH START-UP MAP</h1>
-      {Object.keys(projectMap).map((project) => (       
-        <button
-          key={project}
-          onClick={() => {
-            setActiveProject(project);
+    
+    <div className="App"> 
+    <React.Fragment>
+      <AppBar color="rgb(0, 0, 0)">
+        <Toolbar>
+          <Typography color="rgb(100, 100, 100)" aria-label="Menu" style={{ marginRight: "5vw" }}>
+          <h1>Menu</h1>
+          </Typography>
+         
+          <IconButton color="rgb(255, 255, 255)" aria-label="ZoomIn" onClick={() => {
+            setZoomSize(zoomSize +1);
+            forceRef.current.zoom(zoomSize + 1, 250);
+            }}>
+            
+            <ZoomInIcon />
+          </IconButton>
+
+          <IconButton color="rgb(255, 255, 255)" aria-label="ZoomOut" onClick={() => {
+            setZoomSize(zoomSize - 1);
+            forceRef.current.zoom(zoomSize - 1, 250);
           }}>
-          {project}
-        </button>        
-      ))}
-      <button onClick={reset}>RESET</button>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {projectMap[activeProject].clusters.map((cluster) => (
-           <button
-            key={cluster.id}
-            onClick={() => {
+          <ZoomOutIcon />
+          </IconButton>
+
+          <IconButton color="rgb(255, 255, 255)" aria-label="Center" onClick={() => {
+            forceRef.current.zoomToFit();
+            
+            }}>
+            <CenterFocusWeakIcon />
+          </IconButton>
+
+          <IconButton color="rgb(255, 255, 255)" aria-label="Replay" onClick={reset}>
+            <ReplayIcon />
+          </IconButton >
+           {projectMap[activeProject].clusters.map((cluster) => (
+           <IconButton
+              /// style del hover
+              style={{ backgroundColor: 'transparent' }} 
+              size="small"
+              key={cluster.id}
+              onClick={() => {
               toggleCluster(cluster.id);
+              
             }}
-           >
-            {cluster.name}
-          </button>
+          >
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {cluster.name}   
+                
+          </IconButton>
+
+          
         ))}
-      </div>
+
+        </Toolbar>
+      </AppBar>    
+     
       <div style={{ backgroundColor: "rgb(237, 239, 240)"}}>
         <ForceGraph2D
+          /// bestimme hoehe und weite
           width={window.innerWidth}
-          height={window.innerHeight-150}
+          height={window.innerHeight}
           minZoom={2}
           maxZoom={200}
           ref={forceRef}
@@ -183,7 +235,7 @@ image.src = './images/test.png';
            
             } else if (globalScale >= 3) {
               //load Image
-              var imgload = new Image(5,5);
+              var imgload = new Image(9,9);
               imgload.src = node.testimg;
           
               //render Image ohne Laggy function
@@ -227,7 +279,9 @@ image.src = './images/test.png';
           }}
         />
       </div>
+      </React.Fragment>
     </div>
+    
   );
 }
 
