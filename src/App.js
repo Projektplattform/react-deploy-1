@@ -107,13 +107,13 @@ function App() {
     setHiddenClusters([]);
     setCollapsedClusters(projectMap[activeProject].clusterIds);
     forceRef.current.zoomToFit();
+    setZoomSize(forceRef.current.zoom()); 
   };
-
+const minimalZoom = 2;
+const maximalZoom = 180;
 const image = new Image(60, 45); 
 image.src = './images/test.png';
-
-  return (
-    
+  return ( 
     <div className="App"> 
     <React.Fragment>
       <AppBar color="rgb(0, 0, 0)">
@@ -121,29 +121,30 @@ image.src = './images/test.png';
           <Typography color="rgb(100, 100, 100)" aria-label="Menu" style={{ marginRight: "5vw" }}>
           <h1>Menu</h1>
           </Typography>
-         
           <IconButton color="rgb(255, 255, 255)" aria-label="ZoomIn" onClick={() => {
-            setZoomSize(zoomSize +1);
+            /// check if ZoomSize is in Range
+            if (forceRef.current.zoom() > minimalZoom && forceRef.current.zoom() < maximalZoom){
+              setZoomSize(zoomSize + 1);
+            }  
             forceRef.current.zoom(zoomSize + 1, 250);
             }}>
-            
             <ZoomInIcon />
           </IconButton>
-
           <IconButton color="rgb(255, 255, 255)" aria-label="ZoomOut" onClick={() => {
-            setZoomSize(zoomSize - 1);
+            /// check if ZoomSize is in Range
+            if (forceRef.current.zoom() > minimalZoom && forceRef.current.zoom() < maximalZoom){
+              setZoomSize(zoomSize - 1);
+            }           
             forceRef.current.zoom(zoomSize - 1, 250);
           }}>
           <ZoomOutIcon />
           </IconButton>
-
           <IconButton color="rgb(255, 255, 255)" aria-label="Center" onClick={() => {
             forceRef.current.zoomToFit();
-            
+            setZoomSize(forceRef.current.zoom());
             }}>
             <CenterFocusWeakIcon />
           </IconButton>
-
           <IconButton color="rgb(255, 255, 255)" aria-label="Replay" onClick={reset}>
             <ReplayIcon />
           </IconButton >
@@ -154,16 +155,12 @@ image.src = './images/test.png';
               size="small"
               key={cluster.id}
               onClick={() => {
-              toggleCluster(cluster.id);
-              
+              toggleCluster(cluster.id);   
             }}
           >
           &nbsp;&nbsp;&nbsp;&nbsp;
           {cluster.name}   
-                
           </IconButton>
-
-          
         ))}
 
         </Toolbar>
@@ -174,8 +171,8 @@ image.src = './images/test.png';
           /// bestimme hoehe und weite
           width={window.innerWidth}
           height={window.innerHeight}
-          minZoom={2}
-          maxZoom={200}
+          minZoom={minimalZoom}
+          maxZoom={maximalZoom}
           ref={forceRef}
           onNodeClick={handleNodeClick}
           graphData={graphData}

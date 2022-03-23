@@ -486,7 +486,6 @@ const data = {
       cluster_id: "2",
       id: "wastebox",
       name: "wastebox",
-      cluster_id: "2",
       location: "Österreich",
       link: "https://www.wastebox.biz/",
       img: "./images/test.png",
