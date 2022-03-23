@@ -13,15 +13,11 @@ import ZoomOutIcon from "@material-ui/icons/ZoomOut";
 import ReplayIcon from "@material-ui/icons/Replay";
 import ImageIcon from "@material-ui/icons/Image";
 import CenterFocusWeakIcon from "@material-ui/icons/CenterFocusWeak";
-
 import {
   data as p2data,
   clusterIds as p2ClusterIds,
   clusters as p2clusters
 } from "./CLUSTERSTARTUP.js";
-
-
-
 
 const projectMap = {
   STARTUP: {
@@ -30,11 +26,8 @@ const projectMap = {
     clusters: p2clusters
   }
 };
-
 function App() {
-  
   const [zoomSize, setZoomSize] = useState(3);
-
   const [activeProject, setActiveProject] = useState("STARTUP");
   const [initialCenter, setInitialCenter] = useState(true);
   const [collapsedClusters, setCollapsedClusters] = useState(
@@ -42,7 +35,6 @@ function App() {
   );
   const [hiddenClusters, setHiddenClusters] = useState([]);
   const forceRef = useRef();
-
   useEffect(() => {
     forceRef.current.d3Force("charge").strength(0);
     forceRef.current.d3Force("link").distance(12);
@@ -56,13 +48,10 @@ function App() {
       })
     );
   }, []);
-
   useEffect(() => {
     setCollapsedClusters(projectMap[activeProject].clusterIds);
     setInitialCenter(true);
-  }, [activeProject]);
-
-  
+  }, [activeProject]);  
   const toggleClusterCollapse = (clusterId) => {
     if (collapsedClusters.includes(clusterId)) {
       setCollapsedClusters(collapsedClusters.filter((id) => id !== clusterId));
@@ -70,7 +59,6 @@ function App() {
       setCollapsedClusters([...collapsedClusters, clusterId]);
     }
   };
-
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
@@ -82,7 +70,6 @@ function App() {
       }
     }
   };
-
   const toggleCluster = (clusterId) => {
     if (hiddenClusters.includes(clusterId)) {
       setHiddenClusters(hiddenClusters.filter((id) => id !== clusterId));
@@ -102,7 +89,6 @@ function App() {
       links: projectMap[activeProject].data.links
     };
   }, [hiddenClusters, activeProject]);
-
   const reset = () => {
     setHiddenClusters([]);
     setCollapsedClusters(projectMap[activeProject].clusterIds);
@@ -162,7 +148,6 @@ image.src = './images/test.png';
           {cluster.name}   
           </IconButton>
         ))}
-
         </Toolbar>
       </AppBar>    
      
@@ -193,48 +178,35 @@ image.src = './images/test.png';
             const label = node.name;
             const labelP = node.nameP;
             const locationlabel = node.location;
-            node.color = node.fillcolor;
-            
+            node.color = node.fillcolor;        
             const fontSize = node.isClusterNode
               ? 14 * (node.val / 950)
               : 14 / (globalScale * 1.2);
             ctx.font = `${fontSize-1.4}px TTNormsPro-Bold`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            ctx.fillStyle = node.color ? "white" : "black"; //node.color;
-                    
+            ctx.fillStyle = node.color ? "white" : "black"; //node.color;                 
             if (node.isClusterNode && node.isParagraph) {
-
-              //else below arc
-              
+              //else below arc          
               ctx.beginPath();
               ctx.arc(node.x, node.y, 17, 0, 2 * Math.PI, false);
               ctx.fillStyle = 'white';
               ctx.fill();
-
               ctx.fillStyle = node.color;
-              ctx.fillText(label, node.x, node.y);
-              ctx.fillText(labelP, node.x, node.y + 1.1 * fontSize);
-              
-                  
-            } else if (node.isClusterNode) {
-              
+              ctx.fillText(label, node.x, node.y - (1.0 * fontSize) / 2);
+              ctx.fillText(labelP, node.x, node.y + (1.5 * fontSize) / 2);                 
+            } else if (node.isClusterNode) {             
               //else below arc
               ctx.beginPath();
               ctx.arc(node.x, node.y, 17, 0, 2 * Math.PI, false);
               ctx.fillStyle = 'white';
-              ctx.fill();
-              
+              ctx.fill();             
               ctx.fillStyle = node.color;
-              ctx.fillText(label, node.x, node.y); 
-          
- 
-           
+              ctx.fillText(label, node.x, node.y);          
             } else if (globalScale >= 3) {
               //load Image
               var imgload = new Image(5,5);
-              imgload.src = node.testimg;
-          
+              imgload.src = node.testimg;       
               //render Image ohne Laggy function
               if ((!node.x && isNaN(node.x)) || (!node.y && isNaN(node.y))) {
                 return;
@@ -242,19 +214,14 @@ image.src = './images/test.png';
               if (imgload) {
                 ctx.drawImage(imgload, node.x -2.5, node.y -2.5, 5,5);
               }
-
               ctx.font = `bold ${2}px TTNormsPro-Bold`;
               ctx.fillStyle = "black";
               ctx.fillText(label, node.x, node.y + 5);
               ctx.font = `${1.5}px TTNormsPro-Italic`;
               ctx.fillText(locationlabel, node.x, node.y + 7);
-              node.color = "white";
-
-              
-                                                      
+              node.color = "white";                                                    
             } 
           }}
-
           enableNodeDrag={true} //from false to true
           nodeVisibility={(node) => {
             if (collapsedClusters.includes(node.clusterId)) {
@@ -278,7 +245,6 @@ image.src = './images/test.png';
       </div>
       </React.Fragment>
     </div>
-    
   );
 }
 

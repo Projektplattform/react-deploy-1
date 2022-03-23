@@ -9,7 +9,7 @@ const data = {
   nodes: [
     {
       id: "0",
-      link: "https://www.bauindustrie-bayern.de/",
+      link: "https://www.ed.tum.de/ppe/home/",
       fillcolor: c_bbiv, //rgb(0, 255, 0)
       isClusterNode: true,
       name: "START UP",
