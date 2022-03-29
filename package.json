@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Projektplattform.github.io/react-deploy-1",
+  "homepage": "http://Projektplattform.github.io/contech",
   "name": "react-deploy",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +17,7 @@
     "react-force-graph-2d": "^1.23.8",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^3.0.1",
+    
     "web-vitals": "^2.1.2"
   },
   "scripts": {

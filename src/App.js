@@ -104,9 +104,8 @@ image.src = './images/test.png';
     <React.Fragment>
       <AppBar color="rgb(0, 0, 0)">
         <Toolbar>
-          <Typography color="rgb(100, 100, 100)" aria-label="Menu" style={{ marginRight: "5vw" }}>
-          <h1>Menu</h1>
-          </Typography>
+          
+          
           <IconButton color="rgb(255, 255, 255)" aria-label="ZoomIn" onClick={() => {
             /// check if ZoomSize is in Range
             if (forceRef.current.zoom() > minimalZoom && forceRef.current.zoom() < maximalZoom){
@@ -132,22 +131,8 @@ image.src = './images/test.png';
             <CenterFocusWeakIcon />
           </IconButton>
           <IconButton color="rgb(255, 255, 255)" aria-label="Replay" onClick={reset}>
-            <ReplayIcon />
+            <ReplayIcon />       
           </IconButton >
-           {projectMap[activeProject].clusters.map((cluster) => (
-           <IconButton
-              /// style del hover
-              style={{ backgroundColor: 'transparent' }} 
-              size="small"
-              key={cluster.id}
-              onClick={() => {
-              toggleCluster(cluster.id);   
-            }}
-          >
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          {cluster.name}   
-          </IconButton>
-        ))}
         </Toolbar>
       </AppBar>    
      
