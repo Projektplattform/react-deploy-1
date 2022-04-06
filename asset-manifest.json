@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-deploy-1/static/css/main.2a94ae79.chunk.css",
-    "main.js": "/react-deploy-1/static/js/main.a55f0478.chunk.js",
-    "main.js.map": "/react-deploy-1/static/js/main.a55f0478.chunk.js.map",
+    "main.css": "/react-deploy-1/static/css/main.6f41f5d6.chunk.css",
+    "main.js": "/react-deploy-1/static/js/main.5d2bd6ac.chunk.js",
+    "main.js.map": "/react-deploy-1/static/js/main.5d2bd6ac.chunk.js.map",
     "runtime-main.js": "/react-deploy-1/static/js/runtime-main.61d84913.js",
     "runtime-main.js.map": "/react-deploy-1/static/js/runtime-main.61d84913.js.map",
     "static/js/2.87c32903.chunk.js": "/react-deploy-1/static/js/2.87c32903.chunk.js",
@@ -10,9 +10,9 @@
     "static/js/3.dbc9c20b.chunk.js": "/react-deploy-1/static/js/3.dbc9c20b.chunk.js",
     "static/js/3.dbc9c20b.chunk.js.map": "/react-deploy-1/static/js/3.dbc9c20b.chunk.js.map",
     "index.html": "/react-deploy-1/index.html",
-    "precache-manifest.a91de994b25871e9a2e69b47919692c3.js": "/react-deploy-1/precache-manifest.a91de994b25871e9a2e69b47919692c3.js",
+    "precache-manifest.b51d991f7e6c61337223dbd418aa53d8.js": "/react-deploy-1/precache-manifest.b51d991f7e6c61337223dbd418aa53d8.js",
     "service-worker.js": "/react-deploy-1/service-worker.js",
-    "static/css/main.2a94ae79.chunk.css.map": "/react-deploy-1/static/css/main.2a94ae79.chunk.css.map",
+    "static/css/main.6f41f5d6.chunk.css.map": "/react-deploy-1/static/css/main.6f41f5d6.chunk.css.map",
     "static/js/2.87c32903.chunk.js.LICENSE.txt": "/react-deploy-1/static/js/2.87c32903.chunk.js.LICENSE.txt",
     "static/media/Agora.png": "/react-deploy-1/static/media/Agora.5f199db6.png",
     "static/media/Alice.png": "/react-deploy-1/static/media/Alice.0bd90616.png",
@@ -88,7 +88,7 @@
   "entrypoints": [
     "static/js/runtime-main.61d84913.js",
     "static/js/2.87c32903.chunk.js",
-    "static/css/main.2a94ae79.chunk.css",
-    "static/js/main.a55f0478.chunk.js"
+    "static/css/main.6f41f5d6.chunk.css",
+    "static/js/main.5d2bd6ac.chunk.js"
   ]
 }
