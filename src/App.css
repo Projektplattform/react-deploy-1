@@ -40,8 +40,9 @@
   font-family: TTNormsPro-Black, TTNormsPro-Italic, TTNormsPro-Bold, TTNormsPro-BoldItalic, TTNormsPro-Black;
   font-weight: bold;
   border-radius: 50%;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 20%;
+  margin-right: 20%;
+ 
 }
 
 body {

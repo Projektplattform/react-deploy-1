@@ -137,8 +137,8 @@ image.src = './images/test.png';
       <div style={{ backgroundColor: "rgb(237, 239, 240)"}} >
         <ForceGraph2D
           /// bestimme hoeh und weite
-          width={window.innerWidth-500}
-          height={window.innerHeight}
+          width={window.innerWidth*0.6}
+          height={window.innerHeight-70}
           minZoom={minimalZoom}
           maxZoom={maximalZoom}
           
