@@ -62,7 +62,7 @@ function App() {
   const handleNodeClick = (node) => {
     toggleClusterCollapse(node.id);
     if (collapsedClusters.includes(node.id)) {
-      forceRef.current.zoom(7, 400);
+      forceRef.current.zoom(6, 400);
       forceRef.current.centerAt(node.x, node.y, 400);
     } else if (!collapsedClusters.includes(node.cluster_id)) {
       if (node.link){
@@ -102,8 +102,8 @@ image.src = './images/test.png';
   return ( 
     <div className="App" position="relative" > 
     
-    <React.Fragment position="relative" marginRight="200px">
-      <AppBar color="rgb(0, 0, 0)" position="relative" marginRight="200px">
+    <React.Fragment position="relative">
+      <AppBar color="rgb(0, 0, 0)" position="relative">
         <Toolbar position="relative">
           <IconButton color="rgb(255, 255, 255)" aria-label="ZoomIn" onClick={() => {
             /// check if ZoomSize is in Range
