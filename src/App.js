@@ -100,12 +100,11 @@ const maximalZoom = 180;
 const image = new Image(60, 45); 
 image.src = './images/test.png';
   return ( 
-    <div className="App"> 
-    <React.Fragment>
-      <AppBar color="rgb(0, 0, 0)">
-        <Toolbar>
-          
-          
+    <div className="App" position="relative" > 
+    
+    <React.Fragment position="relative" marginRight="200px">
+      <AppBar color="rgb(0, 0, 0)" position="relative" marginRight="200px">
+        <Toolbar position="relative">
           <IconButton color="rgb(255, 255, 255)" aria-label="ZoomIn" onClick={() => {
             /// check if ZoomSize is in Range
             if (forceRef.current.zoom() > minimalZoom && forceRef.current.zoom() < maximalZoom){
@@ -135,14 +134,14 @@ image.src = './images/test.png';
           </IconButton >
         </Toolbar>
       </AppBar>    
-     
-      <div style={{ backgroundColor: "rgb(237, 239, 240)"}}>
+      <div style={{ backgroundColor: "rgb(237, 239, 240)"}} >
         <ForceGraph2D
-          /// bestimme hoehe und weite
-          width={window.innerWidth}
+          /// bestimme hoeh und weite
+          width={window.innerWidth-500}
           height={window.innerHeight}
           minZoom={minimalZoom}
           maxZoom={maximalZoom}
+          
           ref={forceRef}
           onNodeClick={handleNodeClick}
           graphData={graphData}
@@ -160,6 +159,7 @@ image.src = './images/test.png';
           nodeCanvasObjectMode={() => "after"}
           nodeCanvasObject={(node, ctx, globalScale) =>  
           {
+            
             const label = node.name;
             const labelP = node.nameP;
             const locationlabel = node.location;
