@@ -136,8 +136,9 @@ image.src = './images/test.png';
       </AppBar>    
       <div style={{ backgroundColor: "rgb(237, 239, 240)"}} >
         <ForceGraph2D
-          /// bestimme hoeh und weite
-          width={window.innerWidth*0.6}
+          /// bestimme hoeh und weite vom Mittelpunkt
+          //width={window.innerWidth*0.6}
+          width={window.innerWidth}
           height={window.innerHeight-70}
           minZoom={minimalZoom}
           maxZoom={maximalZoom}
