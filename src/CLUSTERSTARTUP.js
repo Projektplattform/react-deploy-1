@@ -267,6 +267,18 @@ const data = {
       link: "https://www.bulldozair.com/",
       degrees: 1200
     },
+    {
+      cluster_id: "1",
+      id: "v3sta",
+      name: "v3sta",
+      location: "Deutschland",
+      link: "https://v3sta.de/",
+      img: "./images/test.png",
+      testimg: require("./images/v3sta.png"),
+      fillcolor: c_bautechnologie,
+      rank: 0.0010813553836846186,
+      degrees: 1200
+    }, 
     
     {
       id: "2",
@@ -1254,6 +1266,7 @@ const data = {
       rank: 0.0010813553836846186,
       degrees: 1200
     }, 
+    
   
   ],
   links: [
@@ -1277,6 +1290,7 @@ const data = {
     { source: "1", target: "LetsBuild" },
     { source: "1", target: "Propster" },
     { source: "1", target: "Bulldozair" },
+    { source: "1", target: "v3sta" },
     { source: "2", target: "Triax-Technologies" },
     { source: "2", target: "klarx" },
     { source: "2", target: "CREE Buildings" },
